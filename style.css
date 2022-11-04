@@ -1,0 +1,30 @@
+#profile_img {
+    width: 250px;
+    background: url("./rainbow.gif");
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px gray;
+}
+
+.main_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+  background-color: #E7E7E7;
+  margin: auto;
+  border-radius: 10px;
+  /* border: solid 2px #459A4D; */
+}
+
+#title {
+}
+
+a {
+  font-weight: bold;
+}
+
+#container_list {
+  margin-top: 30px;
+}
