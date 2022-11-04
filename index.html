@@ -12,12 +12,39 @@
       <h1 class="display-1" id="title">About Me</h1>
       <br>
       <p class="lead" style="text-align:center;">I'm Yunchae Choi, bachelor student in <mark>Sungkyunkwan university</mark> studying open source. <br>
-      Thank you for visiting my profile.</p>
-      <img id="profile_img" class="visible" src="./photo.png">
+      Thank you for visiting my profile. I also like <em>dogs</em>.</p>
+      <img id="profile_img" class="visible img-thumbnail rounded-circle" src="./photo.png">
       <span>[My profile]</span>
 
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner" style="width:400px;">
+          <div class="carousel-item active">
+            <img src="./photo.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./photo.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./photo.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
       <div id="container_list" class="flex p-2 text-bg-info" style="border-radius:8px;">
-        <h5 class="alert alert-danger">Check these links</h5>
+        <h5 class="alert alert-danger" id="check_links">Check these links</h5>
         <ul class="list-group">
           <li class="list-group-item list-group-item-primary">
             <a href="https://github.com/" class="link-danger" target="_blank">My github</a>
@@ -30,6 +57,48 @@
           </li>
         </ul>
       </div>
+
+      <div id="container_table" class="mt-5">
+        <h2 style="text-align:center;" class="display-4">Contact Me</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Type</th>
+              <th scope="col">Info</th>
+              <th scope="col">Time I can respond</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Phone</td>
+              <td>010-1234-5818</td>
+              <td>09:00 ~ 23:00</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Github</td>
+              <td> <a href="https://github.com/">link</a> </td>
+              <td>Any time</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td class="text-primary bg-light">Email</td>
+              <td> <a href="mailto:cyunchae@arcs.skku.edu">send</a> </td>
+              <td>10:00 ~ 22:00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <button class="btn btn-primary mt-3 mb-5" type="button" disabled>
+        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+        Loading...
+      </button>
+
+
+
 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
